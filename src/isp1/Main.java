@@ -2,9 +2,10 @@ package isp1;
 
 import isp1.pay.impl.InternetPaymentService;
 import isp1.pay.impl.TerminalPaymentService;
+import jdk.jshell.spi.ExecutionControl;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws ExecutionControl.NotImplementedException {
         InternetPaymentService internetService = new InternetPaymentService();
         internetService.payWebMoney(10);
         internetService.payWebMoney(10);
@@ -13,6 +14,5 @@ public class Main {
         TerminalPaymentService terminalService = new TerminalPaymentService();
         terminalService.payWebMoney(10);
         terminalService.payCreditCard(10);
-        terminalService.payPhoneNumber(10);
     }
 }
