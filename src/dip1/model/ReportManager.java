@@ -1,6 +1,5 @@
 package dip1.model;
 
-import dip1.model.util.PrinterReporter;
 import dip1.model.util.Reportable;
 
 import java.util.List;
